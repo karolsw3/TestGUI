@@ -1,0 +1,10 @@
+{
+  "name": "Bob",
+  "money": "2343",
+  "height": "185",
+  "gui": [
+    {"name": "name", "type": "label"},
+    {"name": "money", "type": "number"},
+    {"name": "height", "type": "slider"}
+  ]
+}
