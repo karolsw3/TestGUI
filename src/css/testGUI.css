@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+.testGUI {
+  font-size: 13px;
+  height: 100vh;
+  width: 300px;
+  opacity: 0.8;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato';
+  overflow-y: auto;
+}
+.testGUI__setSeparator {
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #287aff;
+  color: #287aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.testGUI__button {
+  height: 20px;
+  margin: 0 15px;
+  padding: 2px 20px;
+  border-radius: 3px;
+  color: #fff;
+  background: #287aff;
+  cursor: pointer;
+  transition-duration: 0.12s;
+}
+.testGUI__button:hover {
+  opacity: 0.85;
+}
+.testGUI__input {
+  border: none;
+  margin: 0 15px;
+}
+.testGUI__input[type=text] {
+  color: #fff;
+  background: #000;
+  padding: 3px;
+}
+.testGUI__input[type=range] {
+  -webkit-appearance: none;
+  width: 100px;
+}
+.testGUI__input[type=range]:focus {
+  outline: none;
+}
+.testGUI__input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #6e3c45;
+}
+.testGUI__input[type=range]:focus::-ms-fill-lower {
+  background: #46262c;
+}
+.testGUI__input[type=range]:focus::-ms-fill-upper {
+  background: #6e3c45;
+}
+.testGUI__input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.5px;
+  cursor: pointer;
+  background: #000;
+  border-radius: 10px;
+  border: 0px solid #010101;
+}
+.testGUI__input[type=range]::-webkit-slider-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background: #287aff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10.25px;
+}
+.testGUI__input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4.5px;
+  cursor: pointer;
+  background: #000;
+  border-radius: 10px;
+  border: 0px solid #010101;
+}
+.testGUI__input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background: #287aff;
+  cursor: pointer;
+}
+.testGUI__input[type=range]::-ms-track {
+  width: 100%;
+  height: 4.5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.testGUI__input[type=range]::-ms-fill-lower {
+  background: #1e1013;
+  border: 0px solid #010101;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #000, 0px 0px 1px #0d0d0d;
+}
+.testGUI__input[type=range]::-ms-fill-upper {
+  background: #46262c;
+  border: 0px solid #010101;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #000, 0px 0px 1px #0d0d0d;
+}
+.testGUI__input[type=range]::-ms-thumb {
+  box-shadow: 1.8px 1.8px 5.9px rgba(255,255,255,0), 0px 0px 1.8px rgba(255,255,255,0);
+  border: 0.1px solid rgba(136,136,255,0);
+  height: 25px;
+  width: 27px;
+  border-radius: 27px;
+  background: #5556ff;
+  cursor: pointer;
+  height: 4.5px;
+}
+.testGUI__setting {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+  color: #fff;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testGUI__setting:nth-child(odd) {
+  background: #222;
+}
