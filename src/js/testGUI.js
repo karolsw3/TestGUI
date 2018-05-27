@@ -31,36 +31,52 @@ var testGUI = function (settings) {
           console.error(`${settings[i].type} is not a valid setting type.`)
           break
       }
-      var settingRow = document.createElement('div')
-      settingRow.className = 'testGUI__setting'
-      settingRow.appendChild(settingDiv)
-      panel.appendChild(settingRow)
+      panel.appendChild(settingDiv)
     }
   }
 
   function _createSlider (setting) {
+    var settingRow = document.createElement('div')
+    settingRow.className = 'testGUI__setting'
+
     var div = document.createElement('div')
     div.className = 'testGUI__input'
     div.type = 'range'
-    return div
+
+    settingRow.appendChild(div)
+    return settingRow
   }
 
   function _createSwitch (setting) {
+    var settingRow = document.createElement('div')
+    settingRow.className = 'testGUI__setting'
+
     var div = document.createElement('div')
-    return div
+
+    settingRow.appendChild(div)
+    return settingRow
   }
 
   function _createButton (setting) {
+    var settingRow = document.createElement('div')
+    settingRow.className = 'testGUI__setting'
+
     var div = document.createElement('div')
     div.className = 'testGUI__button'
     var p = document.createElement('p')
     p.innerText = setting.name
     div.appendChild(p)
-    return div
+
+    settingRow.appendChild(div)
+    return settingRow
   }
 
   function _createLabel (setting) {
+    var settingRow = document.createElement('div')
+    settingRow.className = 'testGUI__setting'
+
     var div = document.createElement('div')
-    return div
+    settingRow.appendChild(div)
+    return settingRow
   }
 }
